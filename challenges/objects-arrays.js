@@ -84,12 +84,12 @@ Name email@example.com
 
 Log the result of your new array. */
 const contactInfo = ["Cryne ctorry0@macromedia.com", "Saundra swhal1@state.gov", "Lambert lpparham2@techcrunch.com", "Modestine modler3@symantec.com", "Chick camorts4@google.com", "Jakob jharken5@spigel.de",
-"Robbie rbrister6@redcross.org", ];
+"Robbie rbrister6@redcross.org", "Colline cbrosh7@alibaba.com", "Michail mrome8@shinystat.com", "Hube hlethbrig9@foxnews.com"];
 console.log(contactInfo);
 
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called uni that contains them all. Log the result. */
-const uni = [];
+const uni = ["International Medical & Technological University", "Salem University","Coastal Carolina University", "Universidad Católica de Ávila","Universitat Rovira I Virgili Tarragona"];
 console.log(uni);
 
 
@@ -98,7 +98,7 @@ console.log(uni);
 // Given this zoo data from around the United States, follow the instructions below.  Use the specific array methods in the requests below to solve the problems.
 
 
-zooAnimals = [{"animal_name":"Jackal, asiatic","population":5,"scientific_name":"Canis aureus","state":"Kentucky"},
+const zooAnimals = [{"animal_name":"Jackal, asiatic","population":5,"scientific_name":"Canis aureus","state":"Kentucky"},
 {"animal_name":"Screamer, southern","population":1,"scientific_name":"Chauna torquata","state":"Alabama"},
 {"animal_name":"White spoonbill","population":8,"scientific_name":"Platalea leucordia","state":"Georgia"},
 {"animal_name":"White-cheeked pintail","population":1,"scientific_name":"Anas bahamensis","state":"Oregon"},
@@ -115,6 +115,9 @@ The zoo wants to display both the scientific name and the animal name in front o
 
 */
 const animalNames = [];
+zooAnimals.forEach(zooAnimals => {
+  animalNames.push(`Name: ${zooAnimals.animal_name}, Scientific: ${zooAnimals.scientific_name}`);
+});
 console.log(animalNames);
 
 /* Request 2: .map()    
@@ -124,7 +127,9 @@ The zoos need a list of all their animal's names (names only, not scientific) co
 */
 
 const lowerCase = [];
+zooAnimals.map((zooAnimals, index) => { lowerCase[index] = zooAnimals.animal_name.toLowerCase(); 
 console.log(lowerCase); 
+});
 
 /* Request 3: .filter() 
 
