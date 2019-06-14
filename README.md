@@ -30,14 +30,27 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+    forEach does not return anything while map will call the function that is provided
+
 2. What is the difference between a function and a method?
+
+    A function takes given inputs and returns values while a method is technically a type function that takes a certain set of values of a class.
 
 3. What is closure?
 
+    Allows for nesting of functions thus allowing functions to be used outside of functions from within the inner function.
+
 4. Describe the four rules of the 'this' keyword.
+
+    Global Object: this refers to the global object as in a browser the window would be the object.
+    Declared Object: whhen this is used inside of a declared object it is set to the closest parent object.
+    New: this will be bound to the object being created.
+    Call, Bind Apply: Call takes this and any additional arguments. Aapply only takes two followed by any additional aguments. Bind functions as a call.
+
 
 5. Why do we need super() in an extended class?
 
+    It is used to access and call functions with a parent.
 ## Project Set up
 
 Follow these steps to set up and work on your project:
